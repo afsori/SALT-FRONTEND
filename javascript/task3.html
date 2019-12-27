@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Klik Here</title>
+  </head>
+  <body>
+    <h2>M. AFSORI</h2>
+
+    <button onclick="perulangan()">TOMBOL</button>
+
+    <!-- id hasil -->
+    <div id="hasil"></div>
+
+    <script>
+      function perulangan() {
+        var text = "";
+        var x;
+        for (x = 0; x <= 10; x++) {
+          text += "Angka " + x + "<br>";
+        }
+        document.getElementById("hasil").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>

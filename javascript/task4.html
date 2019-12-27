@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function validateForm() {
+        var x = document.forms["myForm"]["fname"].value;
+        var y = document.forms["myForm"]["y"].value;
+        var z = document.forms["myForm"]["z"].value;
+
+        if (x == "") {
+          alert("Name must be filled out");
+          return false;
+        } else if (y == "") {
+          alert("email must valid");
+        } else if (z == "") {
+          alert("phone must number");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+      <input placeholder="Full Name" type="text" name="fname" />
+      <br />
+      <br />
+
+      <input placeholder="Email Address" type="email" name="y" />
+      <br />
+      <br />
+
+      <input placeholder="Phone Number" type="number" name="z" />
+      <br />
+      <br />
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="exampleRadios"
+          id="exampleRadios1"
+          value="option1"
+        />
+        <label class="form-check-label" for="exampleRadios1">
+          Male
+        </label>
+        <input
+          class="form-check-input"
+          type="radio"
+          name="exampleRadios"
+          id="exampleRadios1"
+          value="option1"
+        />
+        <label class="form-check-label" for="exampleRadios1">
+          Male
+        </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+        />
+        <label class="form-check-label" for="defaultCheck1">
+          I Aggre with the terms & conditions
+        </label>
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
